@@ -1,0 +1,244 @@
+body {
+    padding:0;
+    margin:0;
+    background-color: #383757;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header {
+  color: #3370a8;
+  border-bottom: 2.5px solid #3370a8;
+  
+  }
+
+
+  .titulo {
+
+    margin-left: 34vw;
+
+
+  }
+
+  .espaco1{
+    background-color: black;
+    width: 2.2vw;
+    border-radius: 2px;
+    
+  }
+
+ .banner {
+
+  color: rgb(0, 0, 0);
+  
+
+ }
+
+
+ .banner .container {
+
+  height: 500px;
+  display: flex;
+  align-items: center;
+ }
+
+ .banner  {
+
+  width: 50%;
+  margin: 30px;
+  padding: 20px;
+  width: 47vw;
+  border-radius: 10px;
+  border: solid 2px white;
+  background-color: #002446;
+  margin-left: 25vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ input {
+  width: 1.5vw;
+  margin-left: 2px;
+  display: flex;
+  margin: 5px;
+  
+ }
+
+ .espaco1{
+  background-color: black;
+  width: 2.2vw;
+  border-radius: 2px;
+  
+}
+
+.espaco2{
+  background-color: black;
+  width: 2.2vw;
+  border-radius: 2px;
+  
+}
+
+.espaco3{
+  background-color: black;
+  width: 2.2vw;
+  border-radius: 2px;
+  
+}
+
+.espaco4{
+  background-color: black;
+  width: 2.2vw;
+  border-radius: 2px;
+  
+}
+ 
+   
+
+
+ #palavra1 {
+
+  display: flex;
+  margin-top: -25vw;
+
+
+ }
+
+ #palavra2 {
+
+  display: grid;
+  margin-left: -2.78vw;
+  margin-top: -36vh;
+
+
+ }
+
+ #palavra3 {
+
+  display:flex;
+
+
+ }
+
+ #palavra4 {
+
+  display: grid;
+
+
+ }
+
+ #palavra5 {
+
+  display: grid;
+
+
+ }
+
+ #palavra6 {
+
+  display: grid;
+
+
+ }
+
+ #palavra7 {
+
+  display: grid;
+
+
+ }
+
+ #palavra8 {
+
+  display: grid;
+
+
+ }
+
+ #palavra8 .espaco1{
+  margin-left: 0.3vw;
+ }
+
+ #palavra9 {
+
+  display: grid;
+
+
+ }
+
+ #palavra10 {
+
+  display: grid;
+
+
+ }
+
+ #palavra11 {
+
+  display: grid;
+
+
+ }
+
+ #palavra12 {
+
+  display: grid;
+
+
+ }
+
+ #palavra13 {
+
+  display: grid;
+
+
+ }
+
+ #palavra14 {
+
+  display: grid;
+
+
+ }
+
+ #palavra15 {
+
+  display: grid;
+
+
+ }
+
+ #palavra16 {
+
+  display: grid;
+
+
+ }
+
+
+
+
+.footer {
+
+  background-color: #3370a8;
+  height: 100px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.footer .container {
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+
+
+
+
