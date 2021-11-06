@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(104, 130, 248);
+  background-color: red;
   
   }
 
@@ -35,13 +35,13 @@ border-radius: 2px;
 .palavra1 {
 margin-right: 40vw;
 margin-top: 2vh;
-
+display: flex;
 
 
  }
 
  .palavra2 {
-
+margin-top: 7vh;
  
 
 
@@ -56,7 +56,7 @@ margin-top: 2vh;
  }
 
  .palavra4 {
-
+display: grid;
  
 
 
@@ -70,7 +70,7 @@ margin-top: 2vh;
  }
 
  .palavra6 {
-
+  display: grid;
  
 
 
@@ -84,8 +84,7 @@ margin-top: 2vh;
  }
 
  .palavra8 {
-
- 
+  display: grid;
 
 
  }
@@ -100,14 +99,15 @@ margin-top: 2vh;
  }
 
  .palavra10 {
-
+  display: grid;
+  margin-right: 10%;
  
 
 
  }
 
  .palavra11 {
-
+  display: grid;
  
 
 
@@ -121,21 +121,21 @@ margin-top: 2vh;
  }
 
  .palavra13 {
-
+margin-right: 80vh;
  
 
 
  }
 
  .palavra14 {
-
+  display: grid;
  
 
 
  }
 
  .palavra15 {
-
+  display: grid;
  
 
 
