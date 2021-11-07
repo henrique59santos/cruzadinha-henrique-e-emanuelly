@@ -55,8 +55,8 @@ button{
     height: 800px;
 }
 
-#div_questions{
-background-color:#85C1E9;
+#div_pergunta{
+background-color:#7acc7a;
 width: 700px;
 margin: auto;
 }
@@ -70,7 +70,7 @@ margin: auto;
     width: 100px;
     margin: auto;
 }
-#input_answer{
+#inp_resposta{
     width: 100px;
     margin: auto;
 }
@@ -96,14 +96,13 @@ footer p{
 
 }
 #div_informacao{
-    width: 500px;
+    width: 50%;
     margin: auto;
-    background-color: white;
-    font-size: 20px;
+   font-size: 20px;
 }
 
 
-#div_verifiedAnswer{
+#div_verificacao{
     width: 500px;
     height: 70px;
     margin: auto;

@@ -33,14 +33,16 @@
             <div id="div_game">
                 <br>
                 <div id="div_informacao">
-                    
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h2>Preparado para começar?</h2><br><br>
+                    <p>Aperte no botão acima Iniciar Jogo</p>
                 </div>
                 <br>
                 <div id="div_canvasCruzada"></div>
                 <br>
                 <div style="display: none" id="div_pergunta">
                     <center>
-                        <span id="span_questionText">Vamos encontrar as esferas do dragao</span>
+                        <span id="span_questionText">.</span>
                         <input type="text" id="inp_resposta" placeholder="Sua Reposta"><br>
                         <button id="bt_verificar" onclick="verificar()" class="button">Verificar</button>
                     </center>
@@ -53,7 +55,7 @@
     </article><br><br>
     
     <script>
-    var special_words = ['cpu', 'ula', 'registradores', 'ram', 'rom', 'eprom', 'flash', 'memoria de massa', 'dma', 'cs', 'adress bus', 'data bus', 'i5', 'i7', 'dual core', 'quad core'];
+    var especial_word = ['cpu', 'ula', 'registradores', 'ram', 'rom', 'eprom', 'flash', 'memoria de massa', 'dma', 'cs', 'adress bus', 'data bus', 'i5', 'i7', 'dual core', 'quad core'];
 
 var questions_list = [
     'É responsável pela execução de comandos básicos, como abrir o navegador, rodar um programa específico ou até mesmo carregar o sistema operacional',
@@ -82,12 +84,12 @@ var num = [2, 20, 38, 133, 134, 135, 59, 77, 95, 113, 131, 149,
     241, 259, 277, 295, 313, 117, 118, 113, 114, 37, 38, 39, 40, 41, 42,
     43, 44, 45, 3, 21, 39, 57, 75, 93, 111, 129, 147];
 
-var firstIndex= [2, 133, 59, 59, 272, 236, 116, 27, 203, 312, 270, 187, 117, 113, 37, 3];
+var index1= [2, 133, 59, 59, 272, 236, 116, 27, 203, 312, 270, 187, 117, 113, 37, 3];
 
 var palavra = {
 
     palavra1: {
-        letter: special_words[0].split(''),
+        letter: especial_word[0].split(''),
         position: [2, 20, 38],
         write: function () {
 
@@ -101,7 +103,7 @@ var palavra = {
         }
     },
    palavra2: {
-        letter: special_words[1].split(''),
+        letter: especial_word[1].split(''),
         position: [133, 134, 135],
         write: function () {
             for (i in palavra.palavra2.letter) {
@@ -115,7 +117,7 @@ var palavra = {
         }
     },
     palavra3: {
-        letter: special_words[2].split(''),
+        letter: especial_word[2].split(''),
         position: [59, 77, 95, 113, 131, 149, 167, 185, 203, 221, 239, 257, 275],
         write: function () {
             for (i in palavra.palavra3.letter) {
@@ -129,7 +131,7 @@ var palavra = {
         }
     },
     palavra4: {
-        letter: special_words[3].split(''),
+        letter: especial_word[3].split(''),
         position: [59, 60, 61],
         write: function () {
             for (i in palavra.palavra4.letter) {
@@ -142,7 +144,7 @@ var palavra = {
         }
     },
     palavra5: {
-        letter: special_words[4].split(''),
+        letter: especial_word[4].split(''),
         position: [272, 290, 308],
         write: function () {
             for (i in palavra.palavra5.letter) {
@@ -155,7 +157,7 @@ var palavra = {
         }
     },
     palavra6: {
-        letter: special_words[5].split(''),
+        letter: especial_word[5].split(''),
         position: [236, 254, 272, 290, 308],
         write: function () {
             for (i in palavra.palavra6.letter) {
@@ -168,7 +170,7 @@ var palavra = {
         }
     },
     palavra7: {
-        letter: special_words[6].split(''),
+        letter: especial_word[6].split(''),
         position: [116, 134, 152, 170, 188],
         write: function () {
             for (i in palavra.palavra7.letter) {
@@ -181,7 +183,7 @@ var palavra = {
         }
     },
     palavra8: {
-        letter: special_words[7].split(''),
+        letter: especial_word[7].split(''),
         position: [27, 45, 63, 81, 99, 117, 135, 153, 171, 189, 207, 225, 243, 261, 279, 297],
         write: function () {
             for (i in palavra.palavra8.letter) {
@@ -198,7 +200,7 @@ var palavra = {
         }
     },
     palavra9: {
-        letter: special_words[8].split(''),
+        letter: especial_word[8].split(''),
         position: [203, 204, 205, 312, 313],
         write: function () {
             for (i in palavra.palavra9.letter) {
@@ -211,7 +213,7 @@ var palavra = {
         }
     },
     palavra10: {
-        letter: special_words[9].split(''),
+        letter: especial_word[9].split(''),
         position: [312, 313],
         write: function () {
             for (i in palavra.palavra10.letter) {
@@ -224,7 +226,7 @@ var palavra = {
         }
     },
     palavra11: {
-        letter: special_words[10].split(''),
+        letter: especial_word[10].split(''),
         position: [270, 271, 272, 273, 274, 275, 276, 277, 278, 279],
         write: function () {
             for (i in palavra.palavra11.letter) {
@@ -238,7 +240,7 @@ var palavra = {
         }
     },
     palavra12: {
-        letter: special_words[11].split(''),
+        letter: especial_word[11].split(''),
         position: [187, 205, 223, 241, 259, 277, 295, 313, 117, 118],
         write: function () {
             for (i in palavra.palavra12.letter) {
@@ -252,7 +254,7 @@ var palavra = {
         }
     },
     palavra13: {
-        letter: special_words[12].split(''),
+        letter: especial_word[12].split(''),
         position: [117, 118],
         write: function () {
             for (i in palavra.palavra13.letter) {
@@ -265,7 +267,7 @@ var palavra = {
         }
     },
    palavra14: {
-        letter: special_words[13].split(''),
+        letter: especial_word[13].split(''),
         position: [113, 114],
         write: function () {
             for (i in palavra.palavra14.letter) {
@@ -278,7 +280,7 @@ var palavra = {
         }
     },
     palavra15: {
-        letter: special_words[14].split(''),
+        letter: especial_word[14].split(''),
         position: [37, 38, 39, 40, 41, 42, 43, 44, 45],
         write: function () {
             for (i in palavra.palavra15.letter) {
@@ -292,7 +294,7 @@ var palavra = {
         }
     },
     palavra16: {
-        letter: special_words[15].split(''),
+        letter: especial_word[15].split(''),
         position: [3, 21, 39, 57, 75, 93, 111, 129, 147],
         write: function () {
             for (i in palavra.palavra16.letter) {
@@ -330,7 +332,7 @@ function encerrar() {
     div_pergunta.style.display = 'none';
 
     document.querySelector('#div_canvasCruzada').innerHTML = '';
-    pontuation();
+    pontuacao();
 }
 
 function gameSequence() {
@@ -393,10 +395,10 @@ function gameSequence() {
 }
 
 
-function pontuation() {
+function pontuacao() {
     div_informacao.style.display = 'block';
 
-    div_informacao.innerHTML = '<h1 style="text-align: center;">Parabéns!!</h1><br><br><p style="text-align: center;">Você finalizou o jogo</p><br><br>';
+    div_informacao.innerHTML = '<br><br><br><br><br><br><br><br><br><br><br><br><h1 style="text-align: center;">Parabéns!!</h1><br><br><p style="text-align: center;">Você finalizou o jogo</p><br><br>';
 }
 
 function renderGrid() {
@@ -433,13 +435,13 @@ function paintCells() {
         paintCell.setAttribute('class', 'availableCell');
     }
     
-    for(var initial= 0; initial < firstIndex.length; initial++){
-        var paintIndex_cell = document.getElementById(`cell_${firstIndex[initial]}`);
+    for(var initial= 0; initial < index1.length; initial++){
+        var index2_cell = document.getElementById(`cell_${index1[initial]}`);
 
-        paintIndex_cell.innerHTML= `<span style="color: red; font-size:10px">${initial + 1}</span>`;
+        index2_cell.innerHTML= `<span style="color: red; font-size:10px">${initial + 1}</span>`;
 
         if(initial== 2 ||initial== 3){
-        paintIndex_cell.innerHTML= `<span style="color: red; font-size:10px">3_4</span>`;
+        index2_cell.innerHTML= `<span style="color: red; font-size:10px">3_4</span>`;
         }
     }    
 }
@@ -449,14 +451,14 @@ function verificar() {
 
     if (resposta != '') {
         
-        if (resposta == special_words[correto]) {
+        if (resposta == especial_word[correto]) {
             div_verificacao.classList.add('correctAnswer');
             div_verificacao.innerHTML = '<br>Resposta Correta!';
             correto++;
         }
         else {
             div_verificacao.classList.add('wrongAnswer');
-            div_verificacao.innerHTML = '<br>Resposta Incorreta';
+            div_verificacao.innerHTML = '<br>Resposta Incorreta.';
         }
         setTimeout(function () {
             div_verificacao.style.display = 'block';
@@ -472,7 +474,9 @@ function verificar() {
     else {
         alert('Digite uma resposta');
     }
-}</script>
-</body>
+}
 
+</script>
+
+</body>
 </html>
